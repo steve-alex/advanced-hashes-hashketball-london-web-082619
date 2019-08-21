@@ -175,29 +175,3 @@ def team_names
   end
   team_names
 end
-
-def player_numbers(team_name)
-  player_numbers = []
-  hash = game_hash
-  hash.each do |teams, info|
-    if info[:team_name] == team_name
-      info[:players].each do |player|
-        player_numbers.push(player[:number])
-      end
-    end
-  end
-  player_numbers
-end
-
-def player_stats(player_name)
-  hash = game_hash
-  hash.each do |teams, info|
-    info[:players].each do |player|
-      if player[:player_name] == player_name
-        player.delete(:player_name)
-        return player
-      end
-    end
-  end
-  nil
-end
