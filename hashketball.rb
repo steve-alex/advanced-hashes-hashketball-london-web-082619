@@ -1,3 +1,5 @@
+require "pry"
+
 def game_hash
   hash = {
       :home => {
@@ -16,7 +18,7 @@ def game_hash
               },
 
               {:Player_Name => "Reggie Evans",
-               :Number => 31,
+               :Number => 30,
                :Shoe => 14,
                :Points => 12,
                :Rebounds => 12,
@@ -26,7 +28,7 @@ def game_hash
                :Slam_Dunks => 7
               },
 
-              {:Player_Name => "Brook Lopex",
+              {:Player_Name => "Brook Lopez",
                :Number => 11,
                :Shoe => 17,
                :Points => 17,
@@ -65,7 +67,7 @@ def game_hash
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
       :players => [
-          {:Player_Name => "Jeff Adrian",
+          {:Player_Name => "Jeff Adrien",
            :Number => 4,
            :Shoe => 18,
            :Points => 10,
@@ -124,3 +126,66 @@ def game_hash
   }
   hash
 end
+
+def num_points_scored(player_name)
+  hash = game_hash
+  points_scored = 0
+  hash.each do |teams, info|
+    info[:players].each do |player|
+      if player[:Player_Name] == player_name
+        return player[:Points]
+      else
+        next
+      end
+    end
+  end
+  nil
+end
+
+def shoe_size(player_name)
+  hash = game_hash
+  hash.each do |teams, info|
+    info[:players].each do |player|
+      if player[:Player_Name] == player_name
+        return player[:Shoe]
+      else
+        next
+      end
+    end
+  end
+  nil
+end
+
+def team_colors(team_name)
+  hash = game_hash
+  hash.each do |teams, info|
+    if info[:team_name] == team_name
+      return info[:colors]
+    end
+  end
+  nil
+end
+
+def team_names
+  hash = game_hash
+  team_names = []
+  hash.each do |teams, info|
+    team_names.push(info[:team_name])
+  end
+  team_names
+end
+
+
+def player_numbers(team_name)
+  player_numbers = []
+  hash = game_hash
+  hash.each do |teams, info|
+    if info[:team_name] == team_name
+      info[:players].each do |player|
+        player_numbers.push(player[:Number])
+      end
+    end
+  end
+  player_numbers
+end
+
