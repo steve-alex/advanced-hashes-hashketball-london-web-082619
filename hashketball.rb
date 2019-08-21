@@ -1,64 +1,62 @@
-require "pry"
-
 def game_hash
   hash = {
       :home => {
           :team_name => "Brooklyn Nets",
           :colors => ["Black", "White"],
           :players => [
-              {:Player_Name => "Alan Anderson",
-               :Number => 0,
-               :Shoe => 16,
-               :Points => 22,
-               :Rebounds => 12,
-               :Assists => 12,
-               :Steals => 3,
-               :Blocks => 1,
-               :Slam_Dunks => 1
+              {:player_name => "Alan Anderson",
+               :number => 0,
+               :shoe => 16,
+               :points => 22,
+               :rebounds => 12,
+               :assists => 12,
+               :steals => 3,
+               :blocks => 1,
+               :slam_Dunks => 1
               },
 
-              {:Player_Name => "Reggie Evans",
-               :Number => 30,
-               :Shoe => 14,
-               :Points => 12,
-               :Rebounds => 12,
-               :Assists => 12,
-               :Steals => 12,
-               :Blocks => 12,
-               :Slam_Dunks => 7
+              {:player_name => "Reggie Evans",
+               :number => 31,
+               :shoe => 14,
+               :points => 12,
+               :rebounds => 12,
+               :assists => 12,
+               :steals => 12,
+               :blocks => 12,
+               :slam_Dunks => 7
               },
 
-              {:Player_Name => "Brook Lopez",
-               :Number => 11,
-               :Shoe => 17,
-               :Points => 17,
-               :Rebounds => 19,
-               :Assists => 10,
-               :Steals => 3,
-               :Blocks => 1,
-               :Slam_Dunks => 15
+              {:player_name => "Brook Lopez",
+               :number => 11,
+               :shoe => 17,
+               :points => 17,
+               :rebounds => 19,
+               :assists => 10,
+               :steals => 3,
+               :blocks => 1,
+               :slam_Dunks => 15
               },
 
-              {:Player_Name => "Mason Plumlee",
-               :Number => 1,
-               :Shoe => 19,
-               :Points => 26,
-               :Rebounds => 11,
-               :Assists => 6,
-               :Steals => 3,
-               :Blocks => 8,
-               :Slam_Dunks => 5
+              {:player_name => "Mason Plumlee",
+               :number => 1,
+               :shoe => 19,
+               :points => 26,
+               :rebounds => 11,
+               :assists => 6,
+               :steals => 3,
+               :blocks => 8,
+               :slam_Dunks => 5
               },
 
-              {:Player_Name => "Jason Terry",
-               :Number => 31,
-               :Shoe => 15,
-               :Points => 19,
-               :Rebounds => 2,
-               :Assists => 2,
-               :Steals => 4,
-               :Blocks => 11,
-               :Slam_Dunks => 1
+              {:player_name => "Jason Terry",
+               :number => 31,
+               :shoe => 15,
+               :points => 19,
+               :rebounds => 2,
+               :assists => 2,
+               :steals => 4,
+               :blocks => 11,
+               :slam_Dunks => 1
               }
           ]
       },
@@ -67,59 +65,59 @@ def game_hash
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
       :players => [
-          {:Player_Name => "Jeff Adrien",
-           :Number => 4,
-           :Shoe => 18,
-           :Points => 10,
-           :Rebounds => 1,
-           :Assists => 1,
-           :Steals => 2,
-           :Blocks => 7,
-           :Slam_Dunks => 2
+          {:player_name => "Jeff Adrien",
+           :number => 4,
+           :shoe => 18,
+           :points => 10,
+           :rebounds => 1,
+           :assists => 1,
+           :steals => 2,
+           :blocks => 7,
+           :slam_Dunks => 2
           },
 
-          {:Player_Name => "Bismack Biyombo",
-           :Number => 0,
-           :Shoe => 16,
-           :Points => 12,
-           :Rebounds => 4,
-           :Assists => 7,
-           :Steals => 22,
-           :Blocks => 15,
-           :Slam_Dunks => 10
+          {:player_name => "Bismack Biyombo",
+           :number => 0,
+           :shoe => 16,
+           :points => 12,
+           :rebounds => 4,
+           :assists => 7,
+           :steals => 22,
+           :blocks => 15,
+           :slam_Dunks => 10
           },
 
-          {:Player_Name => "DeSagna Diop",
-           :Number => 2,
-           :Shoe => 14,
-           :Points => 24,
-           :Rebounds => 12,
-           :Assists => 12,
-           :Steals => 4,
-           :Blocks => 5,
-           :Slam_Dunks => 5
+          {:player_name => "DeSagna Diop",
+           :number => 2,
+           :shoe => 14,
+           :points => 24,
+           :rebounds => 12,
+           :assists => 12,
+           :steals => 4,
+           :blocks => 5,
+           :slam_Dunks => 5
           },
 
-          {:Player_Name => "Ben Gordon",
-           :Number => 8,
-           :Shoe => 15,
-           :Points => 33,
-           :Rebounds => 3,
-           :Assists => 2,
-           :Steals => 1,
-           :Blocks => 1,
-           :Slam_Dunks => 0
+          {:player_name => "Ben Gordon",
+           :number => 8,
+           :shoe => 15,
+           :points => 33,
+           :rebounds => 3,
+           :assists => 2,
+           :steals => 1,
+           :blocks => 1,
+           :slam_Dunks => 0
           },
 
-          {:Player_Name => "Kemba Walker",
-           :Number => 33,
-           :Shoe => 15,
-           :Points => 6,
-           :Rebounds => 12,
-           :Assists => 12,
-           :Steals => 7,
-           :Blocks => 5,
-           :Slam_Dunks => 12
+          {:player_name => "Kemba Walker",
+           :number => 33,
+           :shoe => 15,
+           :points => 6,
+           :rebounds => 12,
+           :assists => 12,
+           :steals => 7,
+           :blocks => 5,
+           :slam_Dunks => 12
           }
       ]
     }
@@ -127,13 +125,13 @@ def game_hash
   hash
 end
 
+
 def num_points_scored(player_name)
   hash = game_hash
-  points_scored = 0
   hash.each do |teams, info|
     info[:players].each do |player|
-      if player[:Player_Name] == player_name
-        return player[:Points]
+      if player[:player_name] == player_name
+        return player[:points]
       else
         next
       end
@@ -146,8 +144,8 @@ def shoe_size(player_name)
   hash = game_hash
   hash.each do |teams, info|
     info[:players].each do |player|
-      if player[:Player_Name] == player_name
-        return player[:Shoe]
+      if player[:player_name] == player_name
+        return player[:shoe]
       else
         next
       end
@@ -156,25 +154,27 @@ def shoe_size(player_name)
   nil
 end
 
-def team_colors(team_name)
+
+def team_colors(team)
   hash = game_hash
   hash.each do |teams, info|
-    if info[:team_name] == team_name
+    if info[:team_name] == team
       return info[:colors]
     end
   end
   nil
 end
 
+team_colors("Brooklyn Nets")
+
 def team_names
-  hash = game_hash
   team_names = []
+  hash = game_hash
   hash.each do |teams, info|
     team_names.push(info[:team_name])
   end
   team_names
 end
-
 
 def player_numbers(team_name)
   player_numbers = []
@@ -182,10 +182,22 @@ def player_numbers(team_name)
   hash.each do |teams, info|
     if info[:team_name] == team_name
       info[:players].each do |player|
-        player_numbers.push(player[:Number])
+        player_numbers.push(player[:number])
       end
     end
   end
   player_numbers
 end
 
+def player_stats(player_name)
+  hash = game_hash
+  hash.each do |teams, info|
+    info[:players].each do |player|
+      if player[:player_name] == player_name
+        player.delete(:player_name)
+        return player
+      end
+    end
+  end
+  nil
+end
